@@ -8,8 +8,6 @@
 	http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 	
 	<!-- <bean id="userService" class="com.etoak.service.UserService"/>
-	
-	userAction
 	<bean id="userAction" class="com.etoak.action.UserAction">
 		<property name="userService"  ref="userService"></property>
 	</bean>

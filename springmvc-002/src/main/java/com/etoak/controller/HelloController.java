@@ -12,8 +12,8 @@ public class HelloController implements Controller {
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		String name = request.getParameter("name");
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("hello");
-		mv.addObject("result","Hello " +name);
+		mv.setViewName("hello");//返回到哪个页面
+		mv.addObject("result","Hello " + name);//返回的数据
 		return mv;
 	}
 

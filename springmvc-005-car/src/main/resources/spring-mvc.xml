@@ -15,11 +15,17 @@
 		expression="org.springframework.stereotype.Controller"/>
 		<context:include-filter type="annotation"
 		expression="org.springframework.web.bind.annotation.RestController"/>
+		<context:exclude-filter type="annotation"
+		expression="org.springframework.stereotype.Service"/>
+		<context:exclude-filter type="annotation"
+		expression="org.springframework.stereotype.Repository"/>
 	</context:component-scan>
 	
 	<mvc:annotation-driven></mvc:annotation-driven>
 	
 	<mvc:default-servlet-handler></mvc:default-servlet-handler>
+	
+	<mvc:resources location="file:d:/upload/" mapping="/pic/**" />
 	
 	<!-- 整合thymeleaf的配置 -->
 	<bean id="templateResolver"
@@ -38,6 +44,11 @@
 	class="org.thymeleaf.spring5.view.ThymeleafViewResolver">
 		<property name="templateEngine" ref="templateEngine" />
 		<property name="characterEncoding" value="utf-8" />
+	</bean>
+	<!-- 配置文件上传解析器 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	<!-- 文件大小限制 -->
+	<property name="maxUploadSize" value="2097152" />
 	</bean>
 </beans>
 

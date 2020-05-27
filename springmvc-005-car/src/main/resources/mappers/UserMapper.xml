@@ -7,4 +7,8 @@
 		select id,name,password,age
 		 from t_spring_user where id = #{value}
 	</select>
+	<select id="getByNameAndPassword" resultType="User">
+		select id,name,password,age
+		 from t_spring_user where name = #{name} and password = #{password}
+	</select>
 </mapper>

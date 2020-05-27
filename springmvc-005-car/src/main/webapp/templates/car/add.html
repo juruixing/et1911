@@ -13,6 +13,9 @@
 </style>
 </head>
 <body>
+<div>
+	<span th:text="${paramError}"></span>
+</div>
 <div id="form">
 	<form id="addForm" th:action="@{/car/add}"
 	class="form-horizontal" role="form" 
@@ -135,7 +138,7 @@
 		etoak.querySelectDict('level');
 		etoak.querySelectDict('output_volume');
 		etoak.queryGearBox();
-		etoak.validateForm();
+		//etoak.validateForm();
 	})
 	
 	//key:value

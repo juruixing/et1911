@@ -82,7 +82,12 @@
     		<groupId>commons-fileupload</groupId>
     		<artifactId>commons-fileupload</artifactId>
     	</dependency>
-	</dependencies>
+    	<!-- Hibernate-validator实现后端校验 -->
+    	<dependency>
+    		<groupId>org.hibernate.validator</groupId>
+    		<artifactId>hibernate-validator</artifactId>
+    	</dependency>
+    	</dependencies>
 	<build>
 		<finalName>springmvc-005-car</finalName>
 	</build>

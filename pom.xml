@@ -12,6 +12,9 @@
     <module>springmvc-003</module>
     <module>springmvc-004-param</module>
     <module>springmvc-005-car</module>
+    <module>et1911-activeMQ</module>
+		<module>et1911-webservice</module>
+        <module>et1911-webservice/untitled</module>
     </modules>
 	<!-- 作用：声明依赖 管理依赖 但是不引入依赖，由子工程决定自己需要的依赖 -->
 	<dependencyManagement>
@@ -19,7 +22,7 @@
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-context</artifactId>
-				<version>5.2.2.RELEASE</version>
+				<version>5.0.7.RELEASE</version>
 			</dependency>
 			<!-- servlet-api -->
 			<dependency>
@@ -31,17 +34,17 @@
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-webmvc</artifactId>
-				<version>5.2.2.RELEASE</version>
+				<version>5.0.7.RELEASE</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-jdbc</artifactId>
-				<version>5.2.2.RELEASE</version>
+				<version>5.0.7.RELEASE</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-tx</artifactId>
-				<version>5.2.2.RELEASE</version>
+				<version>5.0.7.RELEASE</version>
 			</dependency>
 			 <!-- 用户简化java bean 代码的插件 -->
     	<dependency>
